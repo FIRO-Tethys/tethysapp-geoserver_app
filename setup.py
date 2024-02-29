@@ -1,8 +1,8 @@
 from setuptools import setup, find_namespace_packages
-from tethys_apps.app_installation import find_all_resource_files
-from tethys_apps.base.app_base import TethysAppBase
+from setup_helper import find_all_resource_files
 
 # -- Apps Definition -- #
+namespace = 'tethysapp'
 app_package = 'geoserver_app'
 release_package = f'{TethysAppBase.package_namespace}-{app_package}'
 
